@@ -133,6 +133,7 @@
 }
 .sub-header .sub-header-container .big-dropdown-m .big-dropdown {
   display: none;
+  z-index: 999;
 }
 .sub-header .sub-header-container .big-dropdown-m .big-dropdown .big-dropdown-main {
   box-shadow: 0px 2px 5px rgb(117, 117, 117);
@@ -165,7 +166,6 @@
   font-weight: 400;
   font-size: 14px;
   cursor: pointer;
-  z-index: 222;
   transition: all 1s linear;
 }
 .sub-header .sub-header-container .big-dropdown-m .big-dropdown .big-dropdown-main ul li:hover {
@@ -202,7 +202,15 @@
 }
 
 .slider-main {
+  z-index: -1;
+  position: relative;
   height: 600px;
+}
+.slider-main .carousel-control-next {
+  right: -60px;
+}
+.slider-main .carousel-control-prev {
+  left: -80px;
 }
 .slider-main .carousel-control-prev,
 .slider-main .carousel-control-next {
@@ -237,10 +245,12 @@
 .slider-main .slider-container-per .slider-data button a {
   text-decoration: none;
   color: darkslategray;
+  letter-spacing: 0.7px;
 }
 .slider-main .slider-container-per .slider-data button:hover {
   background-color: #A749FF;
   color: white;
+  transition: all 1s linear;
 }
 .slider-main .slider-container-per img {
   width: 100%;
@@ -278,6 +288,106 @@
 
 .bg-remove {
   background-color: transparent !important;
+}
+
+.feature-main {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  margin-top: 100px;
+  font-family: sans-serif;
+}
+.feature-main .per-feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid rgb(255, 255, 255);
+  width: 32%;
+  margin-right: 9px;
+  margin-bottom: 100px;
+  padding: 12px;
+  overflow: hidden;
+  height: 200px;
+}
+.feature-main .per-feature .per-feature-data {
+  width: 49%;
+  padding-left: 20px;
+}
+.feature-main .per-feature .per-feature-data h4, .feature-main .per-feature .per-feature-data .h4 {
+  color: brown;
+}
+.feature-main .per-feature .per-feature-data span {
+  font-size: 13px;
+  color: red;
+  font-weight: 600;
+}
+.feature-main .per-feature .per-feature-data button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border: 2px solid blue;
+  width: 33px;
+  height: 33px;
+  border-radius: 33px;
+}
+.feature-main .per-feature .per-feature-data button a {
+  text-decoration: none;
+}
+.feature-main .per-feature .per-feature-data button:hover {
+  background-color: blue;
+  border: 1px solid rgb(255, 255, 255);
+}
+.feature-main .per-feature .per-feature-data button:hover a {
+  color: white;
+}
+.feature-main .per-feature .per-feature-image {
+  width: 58%;
+}
+.feature-main .per-feature .per-feature-image img {
+  width: 100%;
+  transform: scale(1.4);
+  transition: all 0.5s linear;
+  cursor: not-allowed;
+}
+.feature-main .per-feature:hover img {
+  transform: scale(1.2);
+}
+.feature-main .per-feature:hover button {
+  background-color: rgb(80, 118, 119);
+  border: 2px solid gold;
+}
+.feature-main .per-feature:hover button a {
+  color: white;
+}
+
+.daily-deals {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.daily-deals h2, .daily-deals .h2 {
+  font-weight: 600;
+  word-spacing: 5px;
+  letter-spacing: 0.9px;
+}
+.daily-deals .daily-header {
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.daily-deals .daily-header h4, .daily-deals .daily-header .h4 {
+  padding: 0 25px;
+  font-size: 20px;
+  color: darkcyan;
+  cursor: pointer;
+}
+.daily-deals .daily-header h4:hover, .daily-deals .daily-header .h4:hover {
+  color: rgb(43, 41, 41);
+  transition: 0.5s all linear;
+}
+.daily-deals .daily-header h4:active, .daily-deals .daily-header .h4:active {
+  color: blue;
 }
 
 /*!
