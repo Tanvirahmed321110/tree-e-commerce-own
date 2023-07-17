@@ -172,7 +172,7 @@
                 padding-right: 20px;
                 top: 20;
                 padding-bottom: 25px;
-                border:3px solid rgb(236, 216, 178);
+                border:3px solid rgb(243, 236, 222);
                 
                ul{
                 margin-top: 24px;
@@ -185,7 +185,8 @@
                 }
                 li{
                     padding: 7px 0;
-                    color: #645e5e;
+                    color: black;
+                    font-size: 13px;
                     opacity: .99;
                     font-weight: 400;
                     font-size: 14px;
@@ -194,7 +195,7 @@
                     transition: all 1s linear;
                     
                     &:hover{
-                        color: black;
+                        color: rgb(126, 89, 228);
                         transform: translateX(9px);
                         transition: all .7s linear;
                         z-index: 331;
@@ -218,9 +219,6 @@
             }
             
         }
-        // &:hover:#main-dropdown{
-        //     background-color: orange;
-        //   }
           
         }
         
@@ -249,9 +247,64 @@
     }
 }
 
+//----image slider -----
+.slider-main{
+    height:600px;
+    // background-color: #9552d4;
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        filter: invert(100%);
+    }
+    
+.slider-container-per{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 55px;
+    
+    // slider data
+    .slider-data{
+        width:50%;
+        h3{
+            margin-bottom: 25px;
+        }
+        h1{
+            font-size: 66px;
+            margin-top: 20px;
+            letter-spacing: .9px;
+        }
+        button{
+            width: 31%;
+            padding: 14px 10px;
+            display: inline-block;
+            outline: none;
+            border: 1px solid black;
+            margin-top: 35px;
 
-
-
+            a{
+                text-decoration: none;
+                color: darkslategray;
+            }
+            
+          &:hover{
+            background-color:#A749FF;
+            color: white;
+          }
+        }
+        
+    }
+    img{
+        width: 100%;
+        height: 540px;
+        object-fit: cover;
+        object-position: center;
+        padding-right:19%;
+    }
+  
+}
+}
 
 // hover state
 #english:hover .small-dropdown-main{
@@ -277,4 +330,7 @@
     transition: all 2s linear;
     transform: scale(1.1);
     display: block !important;
+}
+.bg-remove{
+    background-color: transparent !important;
 }
