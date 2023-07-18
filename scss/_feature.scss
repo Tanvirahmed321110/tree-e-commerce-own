@@ -111,3 +111,30 @@
         }
     }
 }
+
+
+//responsive 
+@media screen and (max-width:1008px) {
+    .per-feature{
+        width: 95% !important;
+        margin-left: 3%;
+        height: auto;
+        
+        .per-feature-image{
+            width: 100% !important;
+            margin-right: 113px !important;
+            height: auto;
+        }
+        img{
+            width: 100% !important;
+            height:130px !important;
+           
+        }
+        button{
+            width: 60px !important;
+        }
+    }
+    
+    
+    
+}

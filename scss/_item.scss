@@ -207,3 +207,27 @@
     animation:advantage-animation .2s ease-in 0s 10 ;
       
   }
+  
+  
+  
+  // responsive
+  @media screen and (max-width: 1008px){
+    .item{
+        .per-item{
+            width: 45%;
+            img{
+                width:300px !important;
+            }
+        }
+       
+    }
+    .per-advantage{
+        width: 97% !important;
+        margin-top: 25px !important;
+        
+        img{
+            width:40px !important;
+            height:  auto !important;
+        }
+    }
+  }

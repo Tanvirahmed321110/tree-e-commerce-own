@@ -135,6 +135,9 @@
   margin-right: 0px;
   color: #737171;
 }
+.main-header .main-header-right ul a i:hover {
+  color: black;
+}
 
 .sub-header {
   width: 60%;
@@ -305,6 +308,111 @@
   background-color: transparent !important;
 }
 
+@media screen and (max-width: 1008px) {
+  .container-own {
+    width: 100% !important;
+    padding: 0 4px;
+  }
+  .main-header {
+    box-sizing: border-box;
+    height: auto;
+    flex-direction: column;
+  }
+  .main-header .main-header-left {
+    width: 100% !important;
+    margin: 10px auto;
+    margin-top: 60px;
+  }
+  .main-header .main-header-left ul {
+    width: 100% !important;
+  }
+  .main-header .main-header-left li {
+    width: 33%;
+    margin: 0 2%;
+    font-size: 15px;
+  }
+  .main-header .small-dropdown-main {
+    width: 33% !important;
+  }
+  .main-header .main-header-mediel {
+    position: absolute;
+    width: 100%;
+    left: 37%;
+  }
+  .main-header .main-header-mediel h3, .main-header .main-header-mediel .h3 {
+    font-size: 32px;
+    letter-spacing: 1px !important;
+    margin: 0 auto;
+  }
+  .main-header .main-header-right {
+    text-align: center !important;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100% !important;
+  }
+  .main-header .main-header-right ul {
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+  .main-header .main-header-right a {
+    margin: 0 12px !important;
+  }
+  .main-header .main-header-right a i {
+    margin: 0;
+    font-size: 22px !important;
+  }
+  .main-header .main-header-right a i:hover {
+    color: blue;
+  }
+  .sub-header {
+    height: auto !important;
+  }
+  .sub-header .sub-header-container {
+    flex-direction: column !important;
+  }
+  .sub-header .sub-header-container .big-dropdown-main {
+    width: 330px !important;
+    height: 300px;
+  }
+  .sub-header .sub-header-container .big-dropdown-main h6, .sub-header .sub-header-container .big-dropdown-main .h6 {
+    font-size: 16px;
+  }
+  .sub-header .sub-header-container .big-dropdown-main li {
+    font-size: 13px !important;
+    margin: 5px;
+  }
+  .sub-header .sub-header-container li {
+    border-bottom: 1px solid cadetblue;
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .slider-main {
+    height: auto;
+    margin: 70px 0 !important;
+    padding: 5px !important;
+    justify-content: flex-end !important;
+    align-items: flex-end;
+  }
+  .slider-main h3, .slider-main .h3 {
+    font-size: 20px;
+  }
+  .slider-main h1, .slider-main .h1 {
+    font-size: 36px !important;
+  }
+  .slider-main .slider-container-per {
+    margin: 0 !important;
+  }
+  .slider-main img {
+    width: 100% !important;
+    height: 300px !important;
+    margin-left: 33px !important;
+  }
+  .slider-main button {
+    width: 150px !important;
+  }
+}
 .feature-main {
   width: 100%;
   display: flex;
@@ -405,6 +513,25 @@
   color: blue;
 }
 
+@media screen and (max-width: 1008px) {
+  .per-feature {
+    width: 95% !important;
+    margin-left: 3%;
+    height: auto;
+  }
+  .per-feature .per-feature-image {
+    width: 100% !important;
+    margin-right: 113px !important;
+    height: auto;
+  }
+  .per-feature img {
+    width: 100% !important;
+    height: 130px !important;
+  }
+  .per-feature button {
+    width: 60px !important;
+  }
+}
 .item .per-item {
   width: 25%;
   height: 500px;
@@ -578,6 +705,22 @@
   animation: advantage-animation 0.2s ease-in 0s 10;
 }
 
+@media screen and (max-width: 1008px) {
+  .item .per-item {
+    width: 45%;
+  }
+  .item .per-item img {
+    width: 300px !important;
+  }
+  .per-advantage {
+    width: 97% !important;
+    margin-top: 25px !important;
+  }
+  .per-advantage img {
+    width: 40px !important;
+    height: auto !important;
+  }
+}
 .subscribe {
   width: 55%;
   margin: 0 auto;
@@ -737,6 +880,33 @@ footer .main-footer .footer-per-item-2 p {
   }
   90% {
     transform: translateY(5px);
+  }
+}
+@media screen and (max-width: 1008px) {
+  * {
+    margin: 0;
+  }
+  footer {
+    width: 100% !important;
+    margin-left: 0px;
+  }
+  container-own2 {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .main-footer {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .main-footer .footer-1, .main-footer .footer-per-item, .main-footer .footer-per-item-2 {
+    width: 48% !important;
+    margin: 19px 1% !important;
+  }
+  .main-footer .footer-1 {
+    text-align: center;
+  }
+  .main-footer .footer-per-item {
+    width: 98% !important;
   }
 }
 .contact-image {

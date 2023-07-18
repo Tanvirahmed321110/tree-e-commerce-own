@@ -154,6 +154,10 @@
                         font-size: 20px;
                         margin-right: 0px;
                         color: #737171;
+                        
+                        &:hover{
+                            color: black;
+                        }
                     }
                 }
             }
@@ -366,3 +370,126 @@
 .bg-remove{
     background-color: transparent !important;
 }
+
+
+// responsive in small divice
+
+@media screen and (max-width:1008px) {
+    .container-own{
+        width: 100% !important;
+        padding: 0 4px;
+    }
+    
+    .main-header{
+        // background-color: red;
+        box-sizing: border-box;
+        height: auto;
+        flex-direction: column;
+    
+    .main-header-left{
+        width:100% !important;
+        margin: 10px auto;
+        margin-top:60px;
+       
+      ul{width: 100% !important;}
+        li{ width: 33%;
+            margin: 0 2%;
+            font-size: 15px;
+        }
+    }
+    .small-dropdown-main{
+        width: 33% !important;
+    }
+    //main-header-left end
+    .main-header-mediel{
+        position: absolute;
+        width: 100%;
+        left: 37%;
+        h3{
+            font-size: 32px;
+            letter-spacing: 1px !important;
+            margin: 0 auto;
+        }
+    }
+    //main-header-mediel end
+    .main-header-right{
+        text-align: center !important;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width:100% !important;
+        // margin: 0 auto !important;
+        ul{
+            margin:0 auto !important;
+            text-align: center !important;
+        }
+        
+        a{
+            margin: 0 12px !important;
+            
+            i{
+                margin: 0; 
+                font-size: 22px !important;
+                
+                &:hover{
+                    color: blue ;
+                }
+            }
+        }
+    }
+  }
+  //main header end
+  .sub-header{
+    height: auto !important;
+    .sub-header-container{
+       flex-direction: column !important;
+       
+      .big-dropdown-main{
+        width:330px !important;
+        height: 300px;
+        h6{
+            font-size: 16px;
+        }
+        li{
+            font-size: 13px !important;
+            margin: 5px;
+        }
+      }
+       li{
+        border-bottom: 1px solid cadetblue;
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+       }
+    }
+  }
+  
+  // image slider start
+  .slider-main{
+    height: auto;
+    margin: 70px 0 !important;
+    padding: 5px !important;
+    justify-content: flex-end !important;
+    align-items: flex-end;
+    h3{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 36px !important;
+    }
+    .slider-container-per{
+        margin: 0 !important;
+    }
+    img{
+        width:100% !important;
+        height: 300px !important;
+        margin-left:33px !important;
+    }
+    button{
+        width: 150px !important;
+    }
+    
+  }
+ 
+}
+

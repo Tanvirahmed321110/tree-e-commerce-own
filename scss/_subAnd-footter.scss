@@ -185,3 +185,33 @@ footer{
         transform: translateY(5px);  
      }
 }
+
+
+//responsive
+@media screen and (max-width: 1008px){
+    *{
+        margin: 0;
+    }
+    footer{
+        width: 100% !important;  margin-left: 0px;
+    }
+    container-own2{
+        width: 100% !important;
+        height: auto !important;
+    }
+    .main-footer{
+        width: 100% !important;
+        height: auto !important;
+        
+        .footer-1,.footer-per-item,.footer-per-item-2{
+            width: 48% !important;
+            margin: 19px 1% !important;
+        }
+        .footer-1{
+            text-align: center;
+        }
+        .footer-per-item{
+            width: 98% !important;
+        }
+    }
+}
