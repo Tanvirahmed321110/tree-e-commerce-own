@@ -127,6 +127,26 @@
                 align-items: flex-end;
                 justify-content: flex-end;
                 
+                .shop-icon{
+                    position: relative;
+              
+                    a{
+                        p{
+                            position: absolute;
+                            top: -17px;
+                            right: -10px;
+                            width: 21px;
+                            height: 21px;
+                            background-color: black;
+                            color: white;
+                            border-radius: 50px;
+                            text-align: center;
+                            padding-bottom:-5px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+                
                 a{ text-decoration: none;
                    cursor: pointer;
                     i{

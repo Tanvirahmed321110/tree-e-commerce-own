@@ -109,6 +109,22 @@
   align-items: flex-end;
   justify-content: flex-end;
 }
+.main-header .main-header-right ul .shop-icon {
+  position: relative;
+}
+.main-header .main-header-right ul .shop-icon a p {
+  position: absolute;
+  top: -17px;
+  right: -10px;
+  width: 21px;
+  height: 21px;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  padding-bottom: -5px;
+  font-size: 15px;
+}
 .main-header .main-header-right ul a {
   text-decoration: none;
   cursor: pointer;
